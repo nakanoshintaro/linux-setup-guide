@@ -17,9 +17,7 @@ sudo apt install -y \
     wget \
     unzip \
     zip \
-    lsb-release \
-    gedit \
-    gedit-plugins
+    lsb-release
 
 echo "🧰 ユーティリティ系パッケージをインストール中..."
 sudo apt install -y \
@@ -29,13 +27,22 @@ sudo apt install -y \
     tree \
     terminator \
     jq \
-    vim
+    vim \
+    gedit \
+    gedit-plugins
 
 
 echo "🌐 日本語環境関連のパッケージをインストール中..."
 sudo apt install -y \
     language-pack-ja \
     ibus-mozc \
+    fonts-noto-cjk
+
+echo "🛡 ネットワーク・セキュリティ関連のパッケージをインストール中..."
+sudo apt install -y \
+    ufw \
+    openssh-server
+
 
 echo "🌍 ロケールの設定を ja_JP.UTF-8 に変更"
 sudo update-locale LANG=ja_JP.UTF-8

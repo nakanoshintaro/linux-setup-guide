@@ -1,9 +1,6 @@
 #!/bin/bash
 set -e
 
-echo "📄 エイリアスリストを ~/.alias_list.sh にコピーします..."
-cp ~/linux-setup-guide/common/alias_list.sh ~/.alias_list.sh
-
 echo "📝 ~/.bashrc に読み込み設定を追加します..."
 
 # 読み込み記述がすでにあるか確認
