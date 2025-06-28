@@ -26,7 +26,7 @@ bash install_base.sh
 ```
 
 ## 🛠 `.bashrc` を整える
-bashrc_exampleを参考に、自分の `~/.bashrc` にエイリアスや環境変数の設定を追加してください。
+[`bashrc_example`](bashrc_example)を参考に、自分の `~/.bashrc` にエイリアスや環境変数の設定を追加してください。
 
 ```bash
 gedit ~/.bashrc
@@ -36,7 +36,7 @@ gedit ~/.bashrc
 [`language_setup.md`](language_setup.md)に従って、日本語または英語環境の切り替えを行ってください。多言語環境での動作確認にも対応しています。
 
 ## ✏️ エイリアスのカスタマイズ
-[alias_list.md](alias_list.md)に、開発に便利なエイリアス例を多数掲載しています。好みに合わせて .bashrc に追加してください。
+[`alias_list.md`](alias_list.md)に、開発に便利なエイリアス例を多数掲載しています。好みに合わせて .bashrc に追加してください。
 
 ## 📝 メモ
 - スクリプトの実行には sudo 権限が必要な場合があります。
