@@ -1,6 +1,6 @@
 # 🐧 Linux Setup Guide
 
-Linux環境を開発・サーバー用途で使いやすく構築するためのセットアップガイドです。
+Linux環境のセットアップを効率的かつ再現可能に行うためのガイド・スクリプト・設定ファイルをまとめたものです。
 インストール直後に行う初期設定を体系的にまとめています。
 
 ---
@@ -13,29 +13,34 @@ Linux環境を開発・サーバー用途で使いやすく構築するための
 
 ---
 
-## セットアップ一覧
+## 📚セットアップ一覧
 
-- [基本パッケージのインストール](common)
-- [NAS（ネットワークストレージ）構築手順](nas)
-- [VSCodeのインストールと拡張機能設定](vscode)
-- [ROS2 Humble インストール手順](ros)
+- 🧰 [基本パッケージのインストール](./common/)：共通で使えるalias、bash設定、必須パッケージなど
+- 📦 [NAS（ネットワークストレージ）構築手順](./nas/)：NAS構築の手順と設定ファイル例
+- 🤖 [VSCodeのインストールと拡張機能設定](./vscode/)：VSCodeのインストールと設定例
+- 🛠 [ROS2 Humble インストール手順](./ros/)：ROS2 (Humble) のインストール手順
+- 📄 [`docs`](./docs/)：画像や補足資料の格納場所
 
-## 推奨手順
+---
+
+## 🚀 はじめに
+
+まずはパッケージを最新にしましょう
 
 ```bash
 sudo apt update && sudo apt upgrade -y
-./scripts/install_packages.sh
 ```
 
-## 🧭 セットアップ手順（概要）
+---
 
-```bash
-# リポジトリをクローン
-git clone https://github.com/your-username/linux-setup-guide.git
-cd linux-setup-guide
-```
+## 🗂️ 推奨の使い方
 
-# スクリプトを実行（例：開発環境）
-```bash
-bash scripts/setup_dev_env.sh
-```
+1. **共通設定**の確認 → [common](./common/)
+2. **必要なカテゴリ**に移動してREADMEを読む
+3. スクリプトを実行する or 設定ファイルを参考にする
+
+## 💡 対象ユーザー
+
+- 新しくLinuxをインストールしたばかりの方
+- ROSやNAS、VSCodeなどを手早く構築したい開発者
+- 再インストール時の手順を自動化・標準化したい人
