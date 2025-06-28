@@ -28,12 +28,12 @@ fi
 sudo bash -c 'cat <<EOF >> /etc/samba/smb.conf
 
 [Share]
-   path = /srv/samba/share
-   browseable = yes
-   read only = no
-   guest ok = yes
-   create mask = 0664
-   directory mask = 0775
+    path = /srv/samba/share
+    browseable = yes
+    read only = no
+    guest ok = yes
+    create mask = 0664
+    directory mask = 0775
 EOF'
 
 echo "🔄 Sambaサービスを再起動..."
