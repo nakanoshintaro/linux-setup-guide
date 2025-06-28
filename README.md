@@ -19,13 +19,13 @@ Linux環境のセットアップを効率的かつ再現可能に行うための
   よく使う alias・bashrc 例・基本パッケージ・言語設定スクリプトをまとめています。
 - 📦 [`NAS（ネットワークストレージ）構築手順`](./nas/)<br>
   Ubuntu 上での NAS（ファイルサーバ）構築手順や設定ファイル例を記載しています。
-- 🤖 [`VSCodeのインストールと拡張機能設定`](./vscode/)<br>
+- 🛠️ [`VSCodeのインストールと拡張機能設定`](./vscode/)<br>
   VSCode のインストール方法、拡張機能のセットアップ、`settings.json` の例などを収録しています。
-- [`Python関連の設定`](./python/)<br>
+- 🐍 [`Python関連の設定`](./python/)<br>
   Python の仮想環境やpipの設定について書かれています。
-- [`Google Chrome インストール手順`](./google_chrome/)<br>
+- 🌐 [`Google Chrome インストール手順`](./google_chrome/)<br>
   Google Chrome の設定を記述しています。
-- 🛠 [`ROS, ROS2 インストール手順`](./ros/)<br>
+- 🤖[`ROS, ROS2 インストール手順`](./ros/)<br>
   ROS 2 Humble のインストールスクリプトや設定例を収録。研究・開発で ROS を使う方向けです。
 - 📄 [`docs`](./docs/)<br>
   画像など補足的な資料の格納場所です（他ディレクトリから参照されます）。
