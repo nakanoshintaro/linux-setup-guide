@@ -22,7 +22,9 @@ Linux環境のセットアップを効率的かつ再現可能に行うための
 - 🤖 [`VSCodeのインストールと拡張機能設定`](./vscode/)<br>
   VSCode のインストール方法、拡張機能のセットアップ、`settings.json` の例などを収録しています。
 - [`Python関連の設定`](./python/)<br>
-  Python の仮想環境やpipの設定
+  Python の仮想環境やpipの設定について書かれています。
+- [`Google Chrome インストール手順`](./google_chrome/)<br>
+  Google Chrome の設定を記述しています。
 - 🛠 [`ROS, ROS2 インストール手順`](./ros/)<br>
   ROS 2 Humble のインストールスクリプトや設定例を収録。研究・開発で ROS を使う方向けです。
 - 📄 [`docs`](./docs/)<br>
@@ -45,6 +47,16 @@ sudo apt update && sudo apt upgrade -y
 1. **共通設定**の確認 → [common](./common/)
 2. **必要なカテゴリ**に移動してREADMEを読む
 3. 以下のコマンドでリポジトリをクローンし、スクリプトを実行する or 設定ファイルを参考にする
+
+```bash
+# ホームディレクトリにクローン
+cd ~
+git clone https://github.com/nakanoshintaro/linux-setup-guide.git
+```
+
+```bash
+git clone https://github.com/nakanoshintaro/linux-setup-guide.git
+```
 
 ## 👤 対象ユーザー
 
