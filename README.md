@@ -49,12 +49,6 @@ sudo apt update && sudo apt upgrade -y
 3. 以下のコマンドでリポジトリをクローンし、スクリプトを実行する or 設定ファイルを参考にする
 
 ```bash
-# ホームディレクトリにクローン
-cd ~
-git clone https://github.com/nakanoshintaro/linux-setup-guide.git
-```
-
-```bash
 git clone https://github.com/nakanoshintaro/linux-setup-guide.git
 ```
 
