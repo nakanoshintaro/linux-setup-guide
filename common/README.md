@@ -22,7 +22,7 @@ Linux環境を整える上で最初に行う「共通の初期設定」をまと
 以下のコマンドを実行すると、基本的なパッケージがインストールされ、開発の準備が整います。
 
 ```bash
-bash install_base.sh
+bash ~/linux-setup-guide/common/install_base.sh
 ```
 
 ## 🛠 `.bashrc` を整える
@@ -37,6 +37,13 @@ gedit ~/.bashrc
 
 ## ✏️ エイリアスのカスタマイズ
 [`alias_list.md`](alias_list.md)に、開発に便利なエイリアス例を多数掲載しています。好みに合わせて .bashrc に追加してください。
+
+
+以下のコマンドで個人的に便利なエイリアスを即座に反映できます。
+
+```bash
+bash ~/linux-setup-guide/common/setup_alias.sh
+```
 
 ## 📝 メモ
 - スクリプトの実行には sudo 権限が必要な場合があります。

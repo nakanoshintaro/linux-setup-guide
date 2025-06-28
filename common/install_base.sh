@@ -40,27 +40,12 @@ sudo apt install -y \
 echo "🌍 ロケールの設定を ja_JP.UTF-8 に変更"
 sudo update-locale LANG=ja_JP.UTF-8
 
-read -p "ホームディレクトリのフォルダ名を英語に変更しますか？ [y/N]: " en_dirs
-if [[ "$en_dirs" == "y" || "$en_dirs" == "Y" ]]; then
-    echo "📁 ディレクトリ名を英語に変更します"
-    LANG=C xdg-user-dirs-gtk-update
-
-    echo "⚠️ 画面上にダイアログが表示される場合は「Update Names」または「名前を更新」を選んでください"
-    echo "📝 そのまま自動で英語化されない場合は、以下のコマンドを手動で実行してください："
-    echo "    LANG=C xdg-user-dirs-update --force"
-fi
+echo "📁 ディレクトリ名を英語に変更"
+LANG=C xdg-user-dirs-update --force
 
 echo "🚀 完了: ベース環境が整いました！"
 
 echo ""
-read -p "💡 セットアップが完了しました。今すぐ再起動しますか？ [y/N]: " reboot_choice
-case "$reboot_choice" in
-    [yY])
-        echo "♻️ 再起動を実行します..."
-        sleep 3
-        sudo reboot
-        ;;
-    *)
-        echo "✅ 再起動せずに終了します。手動で再起動してください。"
-        ;;
-esac
+echo "🌀 スクリプト実行完了。10秒後に自動的に再起動します..."
+sleep 10
+sudo reboot
