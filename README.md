@@ -26,7 +26,7 @@ Linux環境を開発・サーバー用途で使いやすく構築するための
 ```bash
 sudo apt update && sudo apt upgrade -y
 ./scripts/install_packages.sh
-
+```
 
 ## 🧭 セットアップ手順（概要）
 
@@ -34,6 +34,9 @@ sudo apt update && sudo apt upgrade -y
 # リポジトリをクローン
 git clone https://github.com/your-username/linux-setup-guide.git
 cd linux-setup-guide
+```
 
 # スクリプトを実行（例：開発環境）
+```bash
 bash scripts/setup_dev_env.sh
+```
