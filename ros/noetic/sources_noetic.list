@@ -1,0 +1,2 @@
+# ROS 1 Noetic 用のAPTリポジトリ（Ubuntu 20.04）
+deb http://packages.ros.org/ros/ubuntu focal main

@@ -1,0 +1,2 @@
+# ROS 2 Jazzy 用のAPTリポジトリ（Ubuntu 24.04）
+deb [arch=amd64 signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu noble main

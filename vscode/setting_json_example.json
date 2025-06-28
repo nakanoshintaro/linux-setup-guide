@@ -1,0 +1,11 @@
+{
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "files.autoSave": "onFocusChange",
+  "editor.rulers": [80, 120],
+  "editor.renderWhitespace": "all",
+  "terminal.integrated.fontSize": 13,
+  "python.languageServer": "Pylance",
+  "C_Cpp.intelliSenseEngine": "Default",
+  "ros.distro": "humble"
+}
