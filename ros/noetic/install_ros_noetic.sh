@@ -16,8 +16,8 @@ sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc \
 
 # 3. ソースリストの追加
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] \
-http://packages.ros.org/ros2/ubuntu $(lsb_release -sc) main" \
-| sudo tee /etc/apt/sources.list.d/ros2-latest.list > /dev/null
+http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" \
+| sudo tee /etc/apt/sources.list.d/ros1-latest.list > /dev/null
 
 # 4. ROS本体のインストール
 sudo apt update

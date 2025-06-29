@@ -72,3 +72,13 @@ neofetch
 
 - システム情報（OS、メモリ、CPU等）をアート付きで出力。
 - `.bashrc` に入れて毎回表示もおすすめ。
+
+---
+
+## `bashrc` へ記述
+
+```bash
+echo 'echo "Hello $(whoami)" | lolcat' >> ~/.bashrc
+echo 'echo "Welcome to your terminal!" | lolcat' >> ~/.bashrc
+```
+

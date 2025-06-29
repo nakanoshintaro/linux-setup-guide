@@ -12,7 +12,7 @@ ROS や Python 開発、C++ プログラミングなどに必要な拡張機能�
 |----------------------|------|
 | `install_code.sh` | VSCode をAPT経由で自動インストールするスクリプト |
 | `setting_json_example.json` | VSCodeのユーザー設定ファイルの例 |
-| `sources_example.list` | APT による VSCode リポジトリ登録用ソース例 |
+| `sources_vscode.list` | APT による VSCode リポジトリ登録用ソース例 |
 | `images/` | インストール手順や設定画面のスクリーンショットなど |
 
 ---
