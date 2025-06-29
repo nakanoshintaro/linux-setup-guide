@@ -71,7 +71,7 @@ sudo apt install -y fonts-noto-cjk
 日本語環境にしていると、`デスクトップ` や `ダウンロード` のように日本語名になります。英語名にするには以下を実行する。
 
 ```bash
-LANG=C xdg-user-dirs-update --force
+LANG=C xdg-user-dirs-update
 ```
 
 表示されるダイアログで `Don't ask me this again` にチェックを入れて更新する。

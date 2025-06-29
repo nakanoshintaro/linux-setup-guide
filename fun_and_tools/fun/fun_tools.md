@@ -38,6 +38,13 @@ echo "Colorful world!" | lolcat
 - 標準出力を虹色に変換。
 - `figlet`, `cowsay` と組み合わせて派手な出力が可能。
 
+#### bashrc へ記述
+
+```bash
+echo 'echo "Hello $(whoami)" | lolcat' >> ~/.bashrc
+echo 'echo "Welcome to your terminal!" | lolcat' >> ~/.bashrc
+```
+
 ---
 
 ## 🔤 `figlet`, `toilet`
@@ -75,10 +82,4 @@ neofetch
 
 ---
 
-## `bashrc` へ記述
-
-```bash
-echo 'echo "Hello $(whoami)" | lolcat' >> ~/.bashrc
-echo 'echo "Welcome to your terminal!" | lolcat' >> ~/.bashrc
-```
 
