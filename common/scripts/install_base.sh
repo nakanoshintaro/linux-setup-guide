@@ -17,7 +17,7 @@ sudo apt install -y \
     wget \
     unzip \
     zip \
-    lsb-release
+    lsb-release 
 
 echo "🧰 ユーティリティ系パッケージをインストール中..."
 sudo apt install -y \
@@ -29,7 +29,8 @@ sudo apt install -y \
     jq \
     vim \
     gedit \
-    gedit-plugins
+    gedit-plugins \
+    gnome-tweaks
 
 
 echo "🌐 日本語環境関連のパッケージをインストール中..."

@@ -30,6 +30,7 @@
 | `jq` | JSON整形・抽出ツール |
 | `vim` | 高機能テキストエディタ |
 | `gedit` / `gedit-plugins` | GUIエディタとその拡張機能 |
+| `gnome-tweaks` | GNOME Shell 環境をカスタマイズ |
 
 ---
 
