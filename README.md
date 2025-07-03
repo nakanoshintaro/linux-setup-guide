@@ -46,7 +46,12 @@ sudo apt update && sudo apt upgrade -y
 
 1. **共通設定**の確認 → [common](./common/)
 2. **必要なカテゴリ**に移動してREADMEを読む
-3. 以下のコマンドでリポジトリをクローンし、スクリプトを実行する or 設定ファイルを参考にする
+3. **git**がインストールされていない場合、以下のコマンドでインストール
+
+```bash
+sudo apt update && sudo apt install git -y
+```
+4. 以下のコマンドでリポジトリをクローン
 
 ```bash
 git clone https://github.com/nakanoshintaro/linux-setup-guide.git
