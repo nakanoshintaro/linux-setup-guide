@@ -13,28 +13,26 @@ Linux環境のセットアップを効率的かつ再現可能に行うための
 
 ---
 
-## 📚セットアップ一覧
+## 📁 ディレクトリ一覧
 
-- 🧰 [`基本パッケージのインストール`](./common/)<br>
-  よく使う alias・bashrc 例・基本パッケージ・言語設定スクリプトをまとめています。
-- 📦 [`NAS（ネットワークストレージ）構築手順`](./nas/)<br>
-  Ubuntu 上での NAS（ファイルサーバ）構築手順や設定ファイル例を記載しています。
-- 🛠️ [`VSCodeのインストールと拡張機能設定`](./vscode/)<br>
-  VSCode のインストール方法、拡張機能のセットアップ、`settings.json` の例などを収録しています。
-- 🐍 [`Python関連の設定`](./python/)<br>
-  Python の仮想環境やpipの設定について書かれています。
-- 🌐 [`Google Chrome インストール手順`](./google_chrome/)<br>
-  Google Chrome の設定を記述しています。
-- 🤖[`ROS, ROS2 インストール手順`](./ros/)<br>
-  ROS 2 Humble のインストールスクリプトや設定例を収録。研究・開発で ROS を使う方向けです。
-- 📄 [`docs`](./docs/)<br>
-  画像など補足的な資料の格納場所です（他ディレクトリから参照されます）。
+| ディレクトリ          | 内容・役割                                               |
+|-----------------------|--------------------------------------------------------|
+| [common/](./common/)         | よく使うエイリアス・共通スクリプト・初期セットアップ         |
+| [git/](./git/)               | Gitの導入・運用ノウハウ・設定例                           |
+| [code/](./code/)             | VSCodeなどのエディタ設定・拡張機能まとめ                   |
+| [python/](./python/)         | Python開発・環境構築・パッケージ管理ノウハウ                |
+| [ros/](./ros/)               | ROSのセットアップ                  |
+| [nas/](./nas/)               | NAS構築・活用法                |
+| [ssh/](./ssh/)               | SSH設定                       |
+| [google_chrome/](./google_chrome/) | Chromeのセットアップ                          |
+| [fun_and_tools/](./fun_and_tools/) | 遊び心のあるツール・便利コマンド                     |
+| [docs/](./docs/)             | 図や設計資料など                                         |
 
 ---
 
 ## 🚀 はじめに
 
-まずはパッケージを最新にしましょう。パスワードが求められます。
+Linuxのインストールが完了したら初めにパッケージを最新にしましょう
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -44,18 +42,18 @@ sudo apt update && sudo apt upgrade -y
 
 ## 🗂️ 推奨の使い方
 
-1. **共通設定**の確認 → [common](./common/)
-2. **必要なカテゴリ**に移動してREADMEを読む
-3. **git**がインストールされていない場合、以下のコマンドでインストール
+1. **git** がインストールされていない場合はインストール
 
 ```bash
 sudo apt update && sudo apt install git -y
 ```
-4. 以下のコマンドでリポジトリをクローン
+2. リポジトリをクローン
 
 ```bash
 git clone https://github.com/nakanoshintaro/linux-setup-guide.git
 ```
+3. 共通設定の確認 ➞ [common](./common/)
+4. 必要なカテゴリに移動してREADMEを確認
 
 ## 👤 対象ユーザー
 
@@ -65,3 +63,4 @@ git clone https://github.com/nakanoshintaro/linux-setup-guide.git
 
 ## 📜 ライセンス
 [MIT License](./LICENSE)
+自由にご利用ください
