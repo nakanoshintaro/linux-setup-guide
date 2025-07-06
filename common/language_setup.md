@@ -35,24 +35,24 @@ sudo update-locale LANG=en_US.UTF-8
 
 ---
 
-## 🈳 日本語入力（Mozc）の設定
+## 🇯🇵 日本語入力（Mozc）の設定
 
-### 1. Mozcのインストール
+1. **Mozcのインストール**
 
-```bash
-sudo apt install -y ibus-mozc
-```
+    ```bash
+    sudo apt install -y ibus-mozc
+    ```
 
-### 2. ibusの再起動
+2. **ibusの再起動**
 
-```bash
-ibus restart
-```
+    ```bash
+    ibus restart
+    ```
 
-### 3. 入力メソッドの設定画面を開く（GUI）
+3. **入力メソッドの設定画面を開く（GUI）**
 
-システム設定 > キーボード > 入力ソース
-から「日本語（Mozc）」を追加します。
+    システム設定 > キーボード > 入力ソース
+    から「日本語（Mozc）」を追加します。
 
 ---
 
@@ -68,17 +68,17 @@ sudo apt install -y fonts-noto-cjk
 
 ## 📁 ディレクトリ名を英語に統一する（ホーム以下）
 
-日本語環境にしていると、`デスクトップ` や `ダウンロード` のように日本語名になります。英語名にするには以下を実行する。
+日本語環境にしていると、`デスクトップ` や `ダウンロード` のように日本語名になります。英語名にするには以下を実行します。
 
 ```bash
 LANG=C xdg-user-dirs-update
 ```
 
-表示されるダイアログで `Don't ask me this again` にチェックを入れて更新する。
+表示されるダイアログで `Don't ask me this again` にチェックを入れて更新します。
 
 ---
 
-## 💡 補足
+## 💡 補足・注意事項
 
 - GUI環境の場合は `gnome-language-selector` も活用可能です。
 - 入力切替が反応しない場合は、ログアウト/再起動してください。
