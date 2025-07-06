@@ -1,2 +1,0 @@
-# ROS 2 Humble 用のAPTリポジトリ（Ubuntu 22.04）
-deb [arch=amd64 signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu jammy main
