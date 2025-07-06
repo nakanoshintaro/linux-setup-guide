@@ -49,7 +49,7 @@ echo "🌍 ロケールの設定を ja_JP.UTF-8 に変更"
 sudo update-locale LANG=ja_JP.UTF-8
 
 echo "📁 ディレクトリ名を英語に変更"
-LANG=C xdg-user-dirs-update
+LANG=C xdg-user-dirs-update --force
 
 echo "🚀 完了: ベース環境が整いました！"
 
