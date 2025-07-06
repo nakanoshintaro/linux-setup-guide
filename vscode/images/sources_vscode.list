@@ -1,0 +1,2 @@
+# Visual Studio Code APT repository for Ubuntu
+deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main
