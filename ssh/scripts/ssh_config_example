@@ -1,0 +1,21 @@
+# ~/.ssh/config のサンプル設定（ssh_config_example）
+
+# NAS サーバー
+Host nas
+    HostName 192.168.1.100
+    User your_username
+    Port 22
+    IdentityFile ~/.ssh/id_rsa
+
+# 開発用リモートPC
+Host dev-pc
+    HostName 192.168.1.200
+    User devuser
+    Port 2222
+    IdentityFile ~/.ssh/id_ed25519
+
+# GitHub 用設定（多段SSHや鍵切り替えなどに便利）
+Host github.com
+    User git
+    HostName github.com
+    IdentityFile ~/.ssh/id_github
