@@ -18,7 +18,8 @@ Linux 環境への Google Chrome のインストール手順です。
 
 <details>
 <summary>クリックで表示</summary>
-```
+
+```plaintext
 ./
 ├── README.md
 ├── docs/
@@ -27,6 +28,7 @@ Linux 環境への Google Chrome のインストール手順です。
 └── scripts/
     └── install_chrome.sh
 ```
+
 </details>
 
 ---
@@ -47,7 +49,7 @@ bash ~/linux-setup-guide/google_chrome/scripts/install_chrome.sh
 
 ## 🚦 起動方法
 
-ターミナルから次のコマンドでGoogle Chromeを起動できます：
+ターミナルから次のコマンドでGoogle Chromeを起動できます。
 
 ```
 google-chrome

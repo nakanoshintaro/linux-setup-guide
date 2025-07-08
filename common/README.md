@@ -25,8 +25,7 @@ Linux環境を整える上で最初に行う「共通の初期設定」をまと
 <details>
 <summary>クリックで表示</summary>
 
-
-```
+```plaintext
 ./
 ├── README.md
 ├── docs/
