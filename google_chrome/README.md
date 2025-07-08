@@ -1,38 +1,62 @@
-# Google Chrome セットアップガイド（chrome/README.md）
+# Google Chrome セットアップガイド
 
-このディレクトリでは、Ubuntu 環境への Google Chrome のインストール手順および、開発・作業効率向上のための拡張機能・設定ガイドを提供します。
+Linux 環境への Google Chrome のインストール手順です。
+
+---
+## 📄 内容一覧
+
+| ディレクトリ/ファイル                  | 内容                   |
+| ---------------------------- | -------------------- |
+| [docs/](./docs/)                | 導入手順などのドキュメント         |
+| └─ [chrome_setup.md](./docs/chrome_setup.md)       | おすすめ拡張機能まとめ |
+| [scripts/](./scripts/)                       | インストール用スクリプト            |
+| └─ [install_chrome.sh](./scripts/install_chrome.sh)    | Linux用Chrome自動インストール      |
+| [images/](./images/)                       | 画像一覧    |
+| README.md                            | この案内ファイル（google_chromeディレクトリの使い方）
+
+#### 📂 ディレクトリ構成
+
+<details>
+<summary>クリックで表示</summary>
+```
+./
+├── README.md
+├── docs/
+│   └── chrome_setup.md
+├── images/
+└── scripts/
+    └── install_chrome.sh
+```
+</details>
 
 ---
 
 ## 🚀 インストール方法（APT経由）
 
 Google 公式リポジトリを登録し、APTから最新版を取得してインストールします。
+下記スクリプトを実行すると、自動でChromeがインストールされます。
 
 ```bash
-bash install_chrome.sh
+bash ~/linux-setup-guide/google_chrome/scripts/install_chrome.sh
 ```
 
-この方法では Chrome が自動更新対象となります。
+- この方法では Chrome が自動更新対象となります。
+- 詳細な手順や別のインストール方法は [chrome_setup.md](./docs/chrome_setup.md) を参照してください。
 
 ---
 
-## 🧩 推奨拡張機能と設定
+## 🚦 起動方法
 
-- 広告ブロック：`uBlock Origin`
-- ダークモード：`Dark Reader`
-- 開発ツール：`React Developer Tools`, `Web Vitals`
-- プライバシー保護：`Privacy Badger`, `ClearURLs`
-- その他：`Tab Manager`, `Session Buddy`, `Bitwarden`
+ターミナルから次のコマンドでGoogle Chromeを起動できます：
 
-詳細は [`chrome_extensions.md`](./chrome_extensions.md) を参照してください。
+```
+google-chrome
+```
 
 ---
 
-## 📸 スクリーンショット例（images/）
 
-| ファイル名 | 説明 |
-|------------|------|
-| `chrome_install_success.png` | APT による Chrome のインストール成功 |
-| `chrome_about.png` | Chrome のバージョン表示画面 |
-| `chrome_extensions_view.png` | 拡張機能の有効化状態 |
-| `chrome_settings_search.png` | 「既定のブラウザ」など設定変更画面 |
+## 📚 関連リンク
+
+- [Google Chrome公式ページ](https://www.google.com/chrome/)
+- [Chromeヘルプセンター](https://support.google.com/chrome)

@@ -1,6 +1,0 @@
-# requirements_example.txt
-flask
-requests
-pandas
-matplotlib
-openai
