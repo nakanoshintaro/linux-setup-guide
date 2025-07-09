@@ -53,7 +53,7 @@ sudo ufw status
 
 ## サーバーIPアドレスの確認
 
-ここまで設定できたら [ssh_client_connect.md](./ssh_client_connect.md) を参照して簡易的に接続テストを行うことができる。事前にサーバー側のIPアドレスを確認しておこう。
+ここまで設定できたら [ssh_client_connect.md](./ssh_client_connect.md) を参照して簡易的に接続テストを行うことができる。本来であればIPアドレスを固定しておくことが理想だが、簡易テストのため現在割り当てられているIPアドレスを確認しておこう。
 
 ```bash
 hostname -I
