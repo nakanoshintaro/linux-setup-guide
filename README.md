@@ -52,8 +52,8 @@ sudo apt update && sudo apt install git -y
 ```bash
 git clone https://github.com/nakanoshintaro/linux-setup-guide.git
 ```
-3. 共通設定の確認 ➞ [common](./common/)
-4. 必要なカテゴリに移動してREADMEを確認
+1. 共通設定の確認 ➞ [common](./common/)
+2. 必要なカテゴリに移動してREADMEを確認
 
 ## 👤 対象ユーザー
 

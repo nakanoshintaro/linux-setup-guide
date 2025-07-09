@@ -1,6 +1,6 @@
-# SSH の設定ガイド（ssh_setup.md）
+# SSH サーバーの構築
 
-このドキュメントでは、Ubuntu 上で SSH（Secure Shell）サーバーをセットアップし、安全かつ便利にリモートアクセスするための手順をまとめています。
+UbuntuでSSHサーバーを構築し、他のUbuntuやWindowsから安全に接続できるようにする方法をまとめています。
 
 ---
 
@@ -11,7 +11,7 @@ sudo apt update
 sudo apt install -y openssh-server
 ```
 
-インストール後、自動的にサービスは起動します。
+> インストール後、自動的にサービスは起動します。
 
 ---
 
@@ -21,11 +21,51 @@ sudo apt install -y openssh-server
 sudo systemctl status ssh
 ```
 
+**active (running)** と表示されていればサーバーが起動している状態です。
+
+起動するには：
+
+```bash
+sudo systemctl start ssh
+```
+
 常に起動しておくには：
 
 ```bash
 sudo systemctl enable ssh
 ```
+
+---
+
+## 🔥 ファイアウォール設定
+
+ファイアウォールがSSHをブロックしている場合があるので、許可して再起動を行う必要があります。
+
+```sh
+sudo ufw allow ssh
+sudo ufw reload
+sudo ufw status
+```
+
+この状態でサーバーの立ち上げ自体は行われます。
+
+---
+
+## サーバーIPアドレスの確認
+
+ここまで設定できたら [ssh_client_connect.md](./ssh_client_connect.md) を参照して簡易的に接続テストを行うことができる。事前にサーバー側のIPアドレスを確認しておこう。
+
+```bash
+hostname -I
+```
+
+または以下のコマンドで `inet 192.168.10.100` のように書かれている部分を参照する。
+
+```bash
+ip a
+```
+
+**なお、ここまでの設定は [ssh_setup.sh](../scripts/ssh_setup.sh) の中で行われている。**
 
 ---
 
