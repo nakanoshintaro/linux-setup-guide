@@ -13,7 +13,7 @@ UbuntuでSSHサーバーを構築し、他のPC（Ubuntu/Windows）から安全�
 | ├─ [ssh_password_auth.md](./docs/ssh_password_auth.md) | パスワード認証での接続方法案内            |
 | └─ [ssh_pubkey_auth.md](./docs/ssh_pubkey_auth.md)       | 公開鍵認証での接続方法案内 |
 | [scripts/](./scripts/)                       | インストール用スクリプト            |
-| └─ [setup_ssh.sh](./scripts/setup_ssh.sh)    | ssh自動インストール用スクリプト      |
+| └─ [ssh_setup.sh](./scripts/ssh_setup.sh)    | ssh自動インストール用スクリプト      |
 | [images/](./images/)                       | 画像一覧    |
 | README.md                            | この案内ファイル（sshディレクトリの使い方）
 
