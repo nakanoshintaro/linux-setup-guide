@@ -39,7 +39,7 @@ UbuntuでSSHサーバーを構築し、他のPC（Ubuntu/Windows）から安全�
 
 ## 🚀 クイックスタート
 
-1. [ssh_setup.sh](./scripts/ssh_setup.sh) を実行して自動でサーバーのセットアップを行う
+1. [ssh_setup.sh](./scripts/ssh_setup.sh) を実行して自動でサーバーの共通セットアップを行う
 
     ```bash
     bash ~/linux-setup-guide/ssh/scripts/ssh_setup.sh

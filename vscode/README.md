@@ -1,70 +1,92 @@
-# VSCode セットアップガイド（vscode/README.md）
+# VSCode セットアップガイド
 
-このディレクトリは、Ubuntu 環境における Visual Studio Code（VSCode）のインストールおよび基本的な設定を支援するためのガイド・スクリプト・設定例をまとめたものです。
-
-ROS や Python 開発、C++ プログラミングなどに必要な拡張機能の導入や、ユーザー設定例も含まれています。
+このディレクトリは、Ubuntu 環境における Visual Studio Code（VSCode）の初期セットアップを効率化するためのスクリプトや設定ファイルをまとめている。
+Python 環境に特化した拡張機能の導入が含まれている。
 
 ---
 
-## 📁 ディレクトリ構成
+## 📄 内容一覧
 
-| ファイル / フォルダ | 説明 |
-|----------------------|------|
-| `install_code.sh` | VSCode をAPT経由で自動インストールするスクリプト |
-| `setting_json_example.json` | VSCodeのユーザー設定ファイルの例 |
-| `sources_vscode.list` | APT による VSCode リポジトリ登録用ソース例 |
-| `images/` | インストール手順や設定画面のスクリーンショットなど |
+| ディレクトリ/ファイル                  | 内容                   |
+| ---------------------------- | -------------------- |
+| [docs/](./docs/)                | 導入手順などのドキュメント         |
+| ├─ [code_setup.md](./docs/code_setup.md)       | おすすめ拡張機能まとめ |
+| ├─ [setting_json_example.json](./docs/setting_json_example.json)       | VSCode用 設定例（settings.json） |
+| └─ [sources_vscode.list](./docs/sources_vscode.list)       | リポジトリ追加用ファイル |
+| [scripts/](./scripts/)                       | インストール用スクリプト            |
+| └─ [install_code.sh](./scripts/install_code.sh)    | Linux用VScode自動インストール      |
+| [images/](./images/)                       | 画像一覧    |
+| README.md                            | この案内ファイル（vscodeディレクトリの使い方）
+
+### 📂 ディレクトリ構造
+
+<details>
+<summary>クリックで表示</summary>
+
+```plaintext
+./
+├── README.md
+├── docs/
+│   ├── code_setup.md
+│   ├── setting_json_example.json
+│   └── sources_vscode.list
+├── images/
+└── scripts/
+    └── install_code.sh
+```
+
+</details>
 
 ---
 
 ## 🚀 クイックスタート
 
-1. Microsoftのリポジトリを登録
-2. VSCodeをAPT経由でインストール
+1. **VSCodeのインストール**
 
-以下のスクリプトを実行してください：
+    ```bash
+    bash ~/linux-setup-guide/vscode/scripts/install_code.sh
+    ```
+
+   - この方法では VSCode が自動更新対象となる。
+   - 詳細な手順や別のインストール方法は [code_setup.md](./docs/code_setup.md) を参照。
+
+    **🏷️ VSCode のバージョン確認コマンド**
+
+    ```bash
+    code --version
+    ```
+
+2. **拡張機能のインストール**
+    VSCodeに拡張機能を追加する。
+    私が入れている拡張機能を一括インストールするには以下のコマンド
+    ```bash
+    bash ~/linux-setup-guide/vscode/scripts/setup_extensions.sh
+    ```
+
+    > [extensions.md](./docs/extensions.md) を参照。
+
+3. **設定ファイルの編集**
+    その他、細かな設定を `setting.json` というファイルに記述する。
+    > [setting.md](./docs/setting.md) を参照
+
+---
+
+## 🚦 起動方法
+
+ターミナルから次のコマンドでVSCodeを起動できます。
 
 ```bash
-cd vscode
-bash install_code.sh
+code
 ```
+または、アプリケーション一覧から `Visual Studio Code` を選択。
 
 ---
 
-## ⚙️ 設定の適用方法
 
-設定ファイル `setting_json_example.json` は以下のディレクトリに配置してください：
+## 📚 関連リンク
 
-```bash
-~/.config/Code/User/settings.json
-```
+- [Visual Studio Code 公式ページ](https://code.visualstudio.com/)
+- [VSCode ドキュメント（日本語）](https://code.visualstudio.com/docs?lang=ja)
+- [VSCode Marketplace（拡張機能一覧）](https://marketplace.visualstudio.com/vscode)
 
-VSCode を再起動すると設定が反映されます。
 
----
-
-## 💻 推奨拡張機能（拡張子）
-
-- `ms-python.python`：Python 開発用
-- `ms-vscode.cpptools`：C/C++ サポート
-- `ms-ros.ros`：ROS 1/2 用拡張
-- `eamodio.gitlens`：Git 連携強化
-- `esbenp.prettier-vscode`：コード整形
-
----
-
-## 📷 スクリーンショット例（images/）
-
-| ファイル名 | 説明 |
-|------------|------|
-| `vscode_install_done.png` | インストール完了画面 |
-| `vscode_extensions_view.png` | 拡張機能の追加画面 |
-| `vscode_ros_workspace.png` | ROS ワークスペースの編集例 |
-| `vscode_settings_json.png` | 設定ファイルを開いた様子 |
-
----
-
-## 📎 補足
-
-- Ubuntu 22.04以上では Snap 版ではなく APT 版の利用を推奨しています。
-- 拡張機能は `code --install-extension <ID>` でCLIからも導入可能です。

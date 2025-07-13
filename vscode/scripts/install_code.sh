@@ -5,16 +5,29 @@
 
 set -e
 
-echo "🔑 Microsoft GPG キーを追加中..."
-wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
-sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/packages.microsoft.gpg
-rm packages.microsoft.gpg
-
-echo "📝 APT ソースを追加中..."
-sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
-
-echo "📦 VSCode をインストール中..."
+echo "🔄 パッケージ情報を更新します"
 sudo apt update
-sudo apt install -y code
 
-echo "✅ VSCode のインストールが完了しました！"
+echo "🔍 wgetとgpgをインストールします..."
+sudo apt-get install -y wget gpg
+
+echo "🔑 Microsoft GPGキーをダウンロードして登録します..."
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+
+echo "📝 VSCodeのリポジトリ情報を追加します..."
+echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" |sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
+
+rm -f packages.microsoft.gpg
+
+echo "📦 apt-transport-httpsをインストールします..."
+sudo apt install -y apt-transport-https
+
+echo "🔄 パッケージリストを更新します..."
+sudo apt update
+
+echo "💻 VSCodeをインストールします..."
+sudo apt install -y code # または code-insiders
+
+echo "✅ VSCodeのインストールが完了しました！"
+echo "🚀 ターミナルで 'code' と入力するとVSCodeが起動します。"

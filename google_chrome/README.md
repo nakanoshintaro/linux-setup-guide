@@ -14,7 +14,7 @@ Linux 環境への Google Chrome のインストール手順です。
 | [images/](./images/)                       | 画像一覧    |
 | README.md                            | この案内ファイル（google_chromeディレクトリの使い方）
 
-#### 📂 ディレクトリ構造
+### 📂 ディレクトリ構造
 
 <details>
 <summary>クリックで表示</summary>
@@ -50,6 +50,7 @@ bash ~/linux-setup-guide/google_chrome/scripts/install_chrome.sh
 ```bash
 google-chrome --version
 ```
+または、アプリケーション一覧から `Google Chrome` を選択。
 
 ---
 
