@@ -11,10 +11,14 @@ Python 環境に特化した拡張機能の導入が含まれている。
 | ---------------------------- | -------------------- |
 | [docs/](./docs/)                | 導入手順などのドキュメント         |
 | ├─ [code_setup.md](./docs/code_setup.md)       | おすすめ拡張機能まとめ |
+| ├─ [extensions.list](./docs/extensions.list)       | 拡張機能リスト |
+| ├─ [extensions.md](./docs/extensions.md)       | 拡張機能ガイド |
+| ├─ [setting.md](./docs/setting.md)       | 設定ガイド |
 | ├─ [setting_json_example.json](./docs/setting_json_example.json)       | VSCode用 設定例（settings.json） |
 | └─ [sources_vscode.list](./docs/sources_vscode.list)       | リポジトリ追加用ファイル |
 | [scripts/](./scripts/)                       | インストール用スクリプト            |
 | └─ [install_code.sh](./scripts/install_code.sh)    | Linux用VScode自動インストール      |
+| └─ [setup_extensions.sh](./scripts/setup_extensions.sh)    | Linux用VScode自動インストール      |
 | [images/](./images/)                       | 画像一覧    |
 | README.md                            | この案内ファイル（vscodeディレクトリの使い方）
 
@@ -28,11 +32,15 @@ Python 環境に特化した拡張機能の導入が含まれている。
 ├── README.md
 ├── docs/
 │   ├── code_setup.md
+│   ├── extensions.list
+│   ├── extensions.md
+│   ├── setting.md
 │   ├── setting_json_example.json
 │   └── sources_vscode.list
 ├── images/
 └── scripts/
-    └── install_code.sh
+    ├── install_code.sh
+    └── setup_extensions.sh
 ```
 
 </details>
@@ -48,7 +56,7 @@ Python 環境に特化した拡張機能の導入が含まれている。
     ```
 
    - この方法では VSCode が自動更新対象となる。
-   - 詳細な手順や別のインストール方法は [code_setup.md](./docs/code_setup.md) を参照。
+   - 手順の詳細や別のインストール方法は [code_setup.md](./docs/code_setup.md) を参照。
 
     **🏷️ VSCode のバージョン確認コマンド**
 

@@ -4,6 +4,11 @@ Google Chrome のインストール手順などをまとめています。
 
 ---
 
+### インストール手順詳細
+<!-- TODO bashファイルの説明-->
+
+---
+
 ## Google Chrome 別インストール手順（公式debパッケージ利用 & ブラウザダウンロード）
 
 ### ① 公式debパッケージを使ったAPTインストール手順
@@ -23,8 +28,6 @@ Google公式が配布しているdebパッケージを利用して、APTの機�
     ```bash
     sudo apt install -y ./google-chrome-stable_current_amd64.deb
     ```
-
-    > ※ 初回インストール時にGoogle公式リポジトリも自動で登録されるため、今後は`sudo apt update`や`sudo apt upgrade`で自動更新されます。
 
 3. **ダウンロードしたパッケージファイルを削除（任意）**
 
@@ -53,7 +56,6 @@ Chromeの公式ウェブサイトからdebファイルを直接ダウンロー�
         sudo apt install -y ./google-chrome-stable_current_amd64.deb
         ```
 
-4. **インストール完了後、「Google Chrome」で検索し起動**
 
 
 ### 補足
@@ -65,6 +67,8 @@ Chromeの公式ウェブサイトからdebファイルを直接ダウンロー�
 ## 🧩 推奨拡張機能
 
 Google Chromeの拡張機能は [Chrome ウェブストア](https://chromewebstore.google.com/?utm_source=ext_app_menu) から手動で追加してください。
+
+<!-- TODO 拡張機能調査 -->
 
 
 | 名前 | 説明 |

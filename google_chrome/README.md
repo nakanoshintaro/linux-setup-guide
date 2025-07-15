@@ -43,7 +43,7 @@ bash ~/linux-setup-guide/google_chrome/scripts/install_chrome.sh
 ```
 
 - この方法では Chrome が自動更新対象となります。
-- 詳細な手順や別のインストール方法は [chrome_setup.md](./docs/chrome_setup.md) を参照してください。
+- 手順の詳細や別のインストール方法は [chrome_setup.md](./docs/chrome_setup.md) を参照してください。
 
 **google-chromeのバージョン確認コマンド**
 
