@@ -8,7 +8,7 @@ Linux環境における Visual Studio Code（VSCode） のインストールか�
 
 ３種類のインストール方法を記述するが、①と②は内部で同じ処理が行われる。
 
-### ① 本リポジトリのシェルスクリプトを利用する方法
+### 方法１：本リポジトリのシェルスクリプトを利用する方法
 
 全自動でインストールするには、下記スクリプトを実行します。
 
@@ -18,7 +18,7 @@ bash ~/linux-setup-guide/vscode/scripts/install_code.sh
 
 スクリプトの内容は [install_code.sh](../scripts/install_code.sh) を参照
 
-### ② コマンドを手作業で実行する方法
+### 方法２：コマンドを手作業で実行する方法
 
 [VSCode 公式サイト](https://code.visualstudio.com/docs/setup/linux#_install-vs-code-on-linux) の `Install VS Code on Linux` に記載されている内容に沿って手動インストールを行う。
 
@@ -67,7 +67,7 @@ bash ~/linux-setup-guide/vscode/scripts/install_code.sh
     sudo apt install -y code
     ```
 
-### ③ ブラウザから直接インストールする方法
+### 方法３：ブラウザから直接インストールする方法
 
 1. **公式サイトにアクセス**
 
