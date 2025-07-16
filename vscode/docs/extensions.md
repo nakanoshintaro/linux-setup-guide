@@ -24,7 +24,11 @@ VSCodeの左サイドバーから「拡張機能」アイコン（四角が4つ�
 ## 💻 推奨拡張機能
 
 以下は本リポジトリ推奨の拡張機能一覧です。
-| 名前 / 英語名                         | 拡張機能ID                                  | 説明（Description）                                                                              |
+
+<details>
+<summary>クリックで表示</summary>
+
+| 名前                          | 拡張機能ID                                  | 説明                                                                              |
 |---------------------------------------|---------------------------------------------|--------------------------------------------------------------------------------------------------|
 | Bracket Pair Color DLW                | bracketpaircolordlw.bracket-pair-color-dlw  | 括弧ごとに色をつけてペアを分かりやすく表示し、コード可読性を向上します。                         |
 | Path Intellisense                     | christian-kohler.path-intellisense          | ファイルパスの自動補完を行い、import文やパス指定が便利になります。                              |
@@ -72,6 +76,8 @@ VSCodeの左サイドバーから「拡張機能」アイコン（四角が4つ�
 | IntelliCode                           | visualstudioexptteam.vscodeintellicode      | AI支援による高度なコード補完を実現します。                                                      |
 | Markdown PDF                          | yzane.markdown-pdf                          | MarkdownファイルからPDFを簡単に生成できます。                                                    |
 | Markdown All in One                   | yzhang.markdown-all-in-one                  | Markdown記法のプレビュー・ショートカット強化、目次自動生成など多機能を追加します。                |
+
+</details>
 
 ---
 
