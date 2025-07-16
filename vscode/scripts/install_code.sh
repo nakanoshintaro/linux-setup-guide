@@ -9,7 +9,7 @@ echo "🔄 パッケージ情報を更新します"
 sudo apt update
 
 echo "🔍 wgetとgpgをインストールします..."
-sudo apt-get install -y wget gpg
+sudo apt install -y wget gpg
 
 echo "🔑 Microsoft GPGキーをダウンロードして登録します..."
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg

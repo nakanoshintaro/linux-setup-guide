@@ -14,8 +14,7 @@ Python 環境に特化した拡張機能の導入が含まれている。
 | ├─ [extensions.list](./docs/extensions.list)       | 拡張機能リスト |
 | ├─ [extensions.md](./docs/extensions.md)       | 拡張機能ガイド |
 | ├─ [setting.md](./docs/setting.md)       | 設定ガイド |
-| ├─ [setting_json_example.json](./docs/setting_json_example.json)       | VSCode用 設定例（settings.json） |
-| └─ [sources_vscode.list](./docs/sources_vscode.list)       | リポジトリ追加用ファイル |
+| └─ [setting_json_example.json](./docs/setting_json_example.json)       | VSCode用 設定例（settings.json） |
 | [scripts/](./scripts/)                       | インストール用スクリプト            |
 | └─ [install_code.sh](./scripts/install_code.sh)    | Linux用VScode自動インストール      |
 | └─ [setup_extensions.sh](./scripts/setup_extensions.sh)    | Linux用VScode自動インストール      |
@@ -36,7 +35,6 @@ Python 環境に特化した拡張機能の導入が含まれている。
 │   ├── extensions.md
 │   ├── setting.md
 │   ├── setting_json_example.json
-│   └── sources_vscode.list
 ├── images/
 └── scripts/
     ├── install_code.sh
@@ -64,18 +62,16 @@ Python 環境に特化した拡張機能の導入が含まれている。
     code --version
     ```
 
-2. **拡張機能のインストール**
-
-    VSCodeに拡張機能を追加する。
-    私が入れている拡張機能を一括インストールするには以下のコマンド
+2. **拡張機能のインストール**  
+    VSCodeに拡張機能を追加する。  
+    私が入れている拡張機能を一括インストールするには以下のコマンドを実行
     ```bash
     bash ~/linux-setup-guide/vscode/scripts/setup_extensions.sh
     ```
 
     > [extensions.md](./docs/extensions.md) を参照。
 
-3. **設定ファイルの編集**
-
+3. **設定ファイルの編集**  
     その他、細かな設定を `setting.json` というファイルに記述する。
     > [setting.md](./docs/setting.md) を参照
 
