@@ -51,22 +51,24 @@ cp ~/linux-setup-guide/vscode/docs/setting_json_example.json ~/.config/Code/User
 
 ## ✅ 主なカスタマイズ項目例
 
+
+
 | 設定項目名                              | 設定例                        | 説明                                                            |
 |------------------------------------------|-------------------------------|-----------------------------------------------------------------|
-| `workbench.startupEditor`              | `none`                      | VSCode起動時にスタートページを表示しない                         |
-| `workbench.iconTheme`                  | `material-icon-theme`        | アイコンテーマ（Material Icon Theme拡張を使用）                  |
-| `editor.fontSize`                      | `18`                          | エディタのフォントサイズ                                         |
-| `code-runner.runInTerminal`            | `true`                        | Code Runnerでターミナル実行を有効化                              |
-| `markdown.marp.exportType`             | `html`                      | Marp拡張でMarkdownスライドのデフォルト出力形式                   |
-| `markdown-preview-enhanced.hideDefaultVSCodeMarkdownPreviewButtons` | `false`       | Markdown Preview Enhanced拡張で既定ボタンを隠さない              |
-| `editor.defaultFormatter`              | `ms-python.autopep8`         | デフォルトフォーマッタをautopep8（Python用）に設定               |
-| `editor.mouseWheelZoom`                | `true`                        | Ctrl+マウスホイールでエディタのズームを有効化                    |
-| `editor.formatOnSave`                  | `true`                        | 保存時に自動でコードフォーマット                                 |
-| `autopep8.args`                        | `[--max-line-length, 150]` | autopep8の最大行長を150に指定                                    |
-| `editor.formatOnPaste`                 | `true`                        | 貼り付け時にも自動フォーマット                                   |
-| `code-runner.saveAllFilesBeforeRun`    | `true`                        | Code Runnerで実行前に全ファイルを保存                            |
-| `code-runner.executorMap`              | `{...}`（多言語コマンド群）   | 各言語ごとの実行コマンドをカスタマイズ                           |
-| `workbench.editor.decorations.badges`  | `false`                       | エディタタブのバッジ装飾を非表示                                 |
-| `explorer.decorations.badges`          | `false`                       | ファイルエクスプローラのバッジ装飾を非表示                       |
-| `update.showReleaseNotes`              | `false`                       | アップデート後のリリースノート表示を無効化                        |
-| `notebook.defaultFormatter`            | `esbenp.prettier-vscode`     | ノートブックセルの既定フォーマッタをPrettierに指定                |
+| workbench.startupEditor              | none                      | VSCode起動時にスタートページを表示しない                         |
+| workbench.iconTheme                  | material-icon-theme        | アイコンテーマ（Material Icon Theme拡張を使用）                  |
+| editor.fontSize                      | 18                          | エディタのフォントサイズ                                         |
+| code-runner.runInTerminal            | true                        | Code Runnerでターミナル実行を有効化                              |
+| markdown.marp.exportType             | html                      | Marp拡張でMarkdownスライドのデフォルト出力形式                   |
+| markdown-preview-enhanced.hideDefaultVSCodeMarkdownPreviewButtons | false       | Markdown Preview Enhanced拡張で既定ボタンを隠さない              |
+| editor.defaultFormatter              | ms-python.autopep8         | デフォルトフォーマッタをautopep8（Python用）に設定               |
+| editor.mouseWheelZoom                | true                        | Ctrl+マウスホイールでエディタのズームを有効化                    |
+| editor.formatOnSave                  | true                        | 保存時に自動でコードフォーマット                                 |
+| autopep8.args                        | [--max-line-length, 150] | autopep8の最大行長を150に指定                                    |
+| editor.formatOnPaste                 | true                        | 貼り付け時にも自動フォーマット                                   |
+| code-runner.saveAllFilesBeforeRun    | true                        | Code Runnerで実行前に全ファイルを保存                            |
+| code-runner.executorMap              | {...}（多言語コマンド群）   | 各言語ごとの実行コマンドをカスタマイズ                           |
+| workbench.editor.decorations.badges  | false                       | エディタタブのバッジ装飾を非表示                                 |
+| explorer.decorations.badges          | false                       | ファイルエクスプローラのバッジ装飾を非表示                       |
+| update.showReleaseNotes              | false                       | アップデート後のリリースノート表示を無効化                        |
+| notebook.defaultFormatter            | esbenp.prettier-vscode     | ノートブックセルの既定フォーマッタをPrettierに指定                |
