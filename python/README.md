@@ -12,5 +12,3 @@
 - pip用依存リスト（`requirements_example.txt`）
 - PEP 621準拠の `pyproject.toml` テンプレート（`pyproject_example.toml`）
 
----
-
