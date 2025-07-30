@@ -4,18 +4,50 @@ Google Chrome のインストール手順などをまとめています。
 
 ---
 
-### インストール手順詳細
-<!-- TODO bashファイルの説明-->
+## Google Chrome インストール手順
 
----
+４種類のインストール方法を記述するが、**方法１と方法２は内部で同じ処理が行われる**。
 
-## Google Chrome 別インストール手順（公式debパッケージ利用 & ブラウザダウンロード）
+### 方法１：本リポジトリのシェルスクリプトを利用する方法
 
-### ① 公式debパッケージを使ったAPTインストール手順
+全自動でインストールするには、下記スクリプトを実行します。
 
-Google公式が配布しているdebパッケージを利用して、APTの機能でインストールする方法です。
+```bash
+bash ~/linux-setup-guide/google_chrome/scripts/install_chrome.sh
+```
+### 方法２：コマンドを手作業で実行する方法
 
-#### 手順
+1. パッケージ情報を更新
+    ```bash
+    sudo apt update
+    ```
+
+2. wgetとgpgをインストール
+    ```bash
+    sudo apt install -y curl wget gnupg
+    ```
+
+3. APTリポジトリ情報を追加
+    ```bash
+    curl -fsSL https://dl.google.com/linux/linux_signing_key.pub | sudo gpg --dearmor -o /usr/share/keyrings/googlechrom-keyring.gpg
+    ```
+
+4. GPG署名鍵を取得
+    ```bash
+    echo "deb [arch=amd64 signed-by=/usr/share/keyrings/googlechrom-keyring.gpg] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+    ```
+
+5. パッケージ情報を更新
+    ```bash
+    sudo apt update
+    ```
+
+6. Google Chrome をインストール
+    ```bash
+    sudo apt install -y google-chrome-stable
+    ```
+
+### 方法３：公式debパッケージを使う方法
 
 1. **パッケージの取得**
 
