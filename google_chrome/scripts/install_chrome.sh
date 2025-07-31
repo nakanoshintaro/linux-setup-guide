@@ -40,5 +40,5 @@ sudo apt update
 echo "🧩 Google Chrome をインストール中..."
 sudo apt install -y google-chrome-stable
 
-echo "✅ Google Chromeのインストールが完了しました:"
+echo "✅ Google Chromeのインストールが完了しました"
 google-chrome --version

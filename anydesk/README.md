@@ -1,7 +1,6 @@
 # AnyDesk セットアップガイド
 
-UbuntuでSSHサーバーを構築し、他のPC（Ubuntu/Windows）から安全に接続できるようにするための資料・スクリプトをまとめています。
-**パスワード認証方式**・**公開鍵認証方式**の両方に対応した手順を提供します。
+リモートデスクトップツール「AnyDesk」をLinux (Ubuntu/Debian) 環境にセットアップする手順をまとめている。
 
 ---
 
@@ -37,22 +36,37 @@ UbuntuでSSHサーバーを構築し、他のPC（Ubuntu/Windows）から安全�
 
 ---
 
-## 🚀 クイックスタート
+## 🚀 インストール方法
 
-1. [ssh_setup.sh](./scripts/ssh_setup.sh) を実行して自動でサーバーの共通セットアップを行う
+[install_anydesk.sh](./scripts/install_anydesk.sh)を実行すると自動でインストールできる。
 
     ```bash
-    bash ~/linux-setup-guide/ssh/scripts/ssh_setup.sh
+    bash ~/linux-setup-guide/ssh/scripts/install_anydesk.sh
     ```
-2. **パスワード認証で使いたい場合**は [ssh_password_auth.md](./docs/ssh_password_auth.md) を参照
 
-    > まずはこちらで簡易テストを行うと良い
+- 手順の詳細や別のインストール方法は [anydesk_setup.md](./docs/anydesk_setup.md) を参照。
 
-3. **公開鍵認証で使いたい場合**は [ssh_pubkey_auth.md](./docs/ssh_pubkey_auth.md) を参照
-    > より安全な方法を取りたい場合、パスワードの入力なしで接続したい場合はこちら
+**anydeskのバージョン確認コマンド**
+
+```bash
+anydesk --version
+```
+
+---
+
+## 🚦 起動方法
+
+ターミナルから次のコマンドでAnyDeskを起動できます。
+
+```
+anydesk
+```
+
+または、アプリケーション一覧から `AnyDesk` を選択。
 
 ---
 
 ## 📚 関連リンク
 
-- [Ubuntu公式SSHガイド](https://help.ubuntu.com/community/SSH)
+- [AnyDesk公式サイト](https://anydesk.com/ja)
+- [AnyDesk Linux版ダウンロードページ](https://anydesk.com/ja/downloads/linux)

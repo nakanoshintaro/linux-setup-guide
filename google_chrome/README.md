@@ -35,22 +35,20 @@ Linux 環境への Google Chrome のインストール手順です。
 
 ## 🚀 インストール方法（APT経由）
 
-Google 公式リポジトリを登録し、APTから最新版を取得してインストールします。
-下記スクリプトを実行すると、自動でChromeがインストールされます。
+[install_chrome.sh](./scripts/install_chrome.sh)を実行すると自動でインストールできる。
 
 ```bash
 bash ~/linux-setup-guide/google_chrome/scripts/install_chrome.sh
 ```
 
-- この方法では Chrome が自動更新対象となります。
-- 手順の詳細や別のインストール方法は [chrome_setup.md](./docs/chrome_setup.md) を参照してください。
+- この方法では Chrome が自動更新対象となる。
+- 手順の詳細や別のインストール方法は [chrome_setup.md](./docs/chrome_setup.md) を参照。
 
 **google-chromeのバージョン確認コマンド**
 
 ```bash
 google-chrome --version
 ```
-または、アプリケーション一覧から `Google Chrome` を選択。
 
 ---
 
@@ -61,6 +59,8 @@ google-chrome --version
 ```
 google-chrome
 ```
+
+または、アプリケーション一覧から `Google Chrome` を選択。
 
 ---
 
