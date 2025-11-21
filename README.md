@@ -7,7 +7,7 @@ Linux環境のセットアップを効率的かつ再現可能に行うための
 
 ## 📌 対象環境
 
-- OS: Ubuntu 22.04 / Linux Mint 21.x など Debian系
+- OS: Ubuntu 24.04 / Linux Mint 21.x など Debian系
 - ユーザー: sudo 権限を持つユーザー
 - 想定用途: 開発環境 / NAS構築 / ROSインストール など
 
