@@ -4,6 +4,25 @@
 
 ---
 
+## 日付
+
+システム→日付と時刻
+曜日、秒を表示できる
+
+---
+
+## アナログ時計
+
+```bash
+sudo apt install gnome-shell-extension-manager
+```
+
+1. アプリ一覧から**Extension Manager**を起動
+2. Desktop Widgets(Desktop Clock)をインストール
+3. 好みのウィジェットを追加
+
+---
+
 ## 🚂 `sl`
 
 ```bash
